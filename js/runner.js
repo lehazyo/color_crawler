@@ -1,6 +1,6 @@
 app = null;
 
-(function(){
+(function() {
   // var app;
   
   var color_crawler_options = {

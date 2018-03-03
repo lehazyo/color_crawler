@@ -1,5 +1,5 @@
 /**
- * Класс для работы с разными кнопками
+ * Класс для работы с разными кнопками 
  */
 class ColorCrawlerApp {
   constructor(options) {

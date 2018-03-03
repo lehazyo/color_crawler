@@ -1,6 +1,6 @@
 /**
  * Класс цветовой ползалки
- * @type type
+ * @type type 
  */
 class ColorCrawler {
   constructor(options) {
