@@ -1,0 +1,36 @@
+body,html{
+  margin: 0; 
+  padding: 0;
+  background: #222;
+  font-family: Arial,sans-serif;
+  height: 100%;
+}
+  .body--waiting{
+    cursor: wait;
+  }
+
+#canvas{
+  display: block;
+  border: 1px solid #ddd;
+  background: #000;
+  margin: auto;
+}
+
+.controls__wrapper{
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px 20px 20px 20px;
+}
+  .body--waiting .controls__wrapper{
+    display: none;
+  }
+.controls__button{
+  display: inline-block;
+  border-radius: 5px;
+  background: #ddd;
+  padding: 8px 12px 8px 12px;
+  font-size: 16px;
+  cursor: pointer;
+}
+  .controls__button--run{}
