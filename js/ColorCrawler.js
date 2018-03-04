@@ -46,7 +46,13 @@ class ColorCrawler {
     this.color_amplitude = options.color_amplitude || 3;
     
     // какой цвет использовать для первой точки
-    this.default_color = options.default_color || [70, 180, 230];
+    this.default_color = [
+      options.default_r || 70, 
+      options.default_g || 180, 
+      options.default_b || 230
+    ];
+    
+    console.log(this.default_color);
     
     // цвет, который будет установлен или который будет преобразовываться
     this.color = null;

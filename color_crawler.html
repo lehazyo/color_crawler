@@ -3,17 +3,154 @@
 <head>
 <meta charset="utf-8" />
 
-<title>Color Crawler v10 by lehazyo</title>
+<title>Color Crawler v1.12 by lehazyo</title>
 
 <link rel="stylesheet" type="text/css" href="css/color_crawler.css" />
 </head>
 <body>
   
   <div class="controls__wrapper">
-    <div class="
-      controls__button
-      controls__button--run
-    ">Запустить</div>
+    
+    <div class="options__wrapper">
+      <div class="options__close_wrapper">
+        <span class="
+          controls__button 
+          options__close
+        ">✕</span>
+      </div>
+      <table class="options__table">
+        <tbody>
+          <tr class="options__row">
+            <td class="
+              options__cell
+              options__cell--label
+            ">
+              Ширина
+            </td>
+            <td class="
+              options__cell
+              options__cell--input
+            ">
+              <input 
+                class="options__input"
+                id="option_width"
+                type="number"
+                maxlength="5"
+              />
+            </td>
+          </tr>
+          <tr class="options__row">
+            <td class="
+              options__cell
+              options__cell--label
+            ">
+              Высота
+            </td>
+            <td class="
+              options__cell
+              options__cell--input
+            ">
+              <input 
+                class="options__input"
+                id="option_height"
+                type="number"
+                maxlength="5"
+              />
+            </td>
+          </tr>
+          <tr class="options__row">
+            <td class="
+              options__cell
+              options__cell--label
+            ">
+              Начальный цвет (RGB)
+            </td>
+            <td class="
+              options__cell
+              options__cell--input
+            ">
+              <input 
+                class="options__input"
+                id="option_default_r"
+                type="number"
+                maxlength="3"
+              />
+              <input 
+                class="options__input"
+                id="option_default_g"
+                type="number"
+                maxlength="3"
+              />
+              <input 
+                class="options__input"
+                id="option_default_b"
+                type="number"
+                maxlength="3"
+              />
+            </td>
+          </tr>
+          <tr class="options__row">
+            <td class="
+              options__cell
+              options__cell--label
+            ">
+              Раз во сколько шагов менять цвет
+            </td>
+            <td class="
+              options__cell
+              options__cell--input
+            ">
+              <input 
+                class="options__input"
+                id="option_cycles_to_change_color"
+                type="number"
+                maxlength="10"
+              />
+            </td>
+          </tr>
+          <tr class="options__row">
+            <td class="
+              options__cell
+              options__cell--label
+            ">
+              Сила, с которой меняется цвет (1-255)
+            </td>
+            <td class="
+              options__cell
+              options__cell--input
+            ">
+              <input 
+                class="options__input"
+                id="option_color_amplitude"
+                type="number"
+                maxlength="3"
+              />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <div class="
+        controls__button
+        options__defaults_wrapper
+      ">
+        <span class="options__defaults">
+          Вернуть изначальные настройки
+        </span>
+      </div>
+    </div>
+    
+    <div class="controls__buttons">
+      <span class="
+        controls__button
+        controls__button--run
+      ">Запустить</span>
+      <br />
+      <span class="
+        controls__button
+        controls__button--options
+      ">Настройки</span>
+    </div>
   </div>
 
 	<canvas id="canvas"></canvas>
