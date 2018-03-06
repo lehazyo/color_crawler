@@ -82,7 +82,7 @@ class ColorCrawler {
     // тип роста
     // 0 - случайный выбор краевой точки
     // 1 - цепочка (рост из последней поставленной краевой точки)
-    this.grow_type = options.grow_type || 0;
+    this.grow_type = options.grow_type || 1;
     
     // раз в какое количество шагов менять тип роста
     this.cycles_to_change_grow_type = options.cycles_to_change_grow_type || 0;
