@@ -44,11 +44,11 @@ class ColorCrawlerApp {
       width: 800,
       height: 600,
       
-      default_r: 70,
+      default_r: 230,
       default_g: 180,
-      default_b: 230,
+      default_b: 70,
       
-      cycles_to_change_color: 10,
+      cycles_to_change_color: 20,
       color_amplitude: 3,
     };
     
